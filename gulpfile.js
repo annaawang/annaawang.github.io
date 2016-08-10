@@ -24,7 +24,7 @@ gulp.task('default', ['scripts']);
 gulp.task('sass', function() {
     return sass('process/sass/styles.scss', {style: 'compressed'})
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('build/css'));
+        .pipe(gulp.dest('builds/css'));
 });
 
 gulp.task('default', ['scripts', 'sass']);
