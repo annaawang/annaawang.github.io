@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
+$body-font: 'Lora', serif;
+
+
+#nav {
+	background-color: blue;
+
+	li {
+		font-family: $body-font;
+	}
+}
+
+
+
+
+
+
+
