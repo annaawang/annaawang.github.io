@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "dependencies",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annaawang/portfolio.git"
+  },
+  "keywords": [
+    "anna",
+    "wang",
+    "portfolio"
+  ],
+  "author": "anna wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annaawang/portfolio/issues"
+  },
+  "homepage": "https://github.com/annaawang/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}
