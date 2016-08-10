@@ -17,4 +17,4 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('builds/js'));
 });
 
-
+gulp.task('default', ['scripts']);
