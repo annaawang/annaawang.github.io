@@ -1,0 +1,28 @@
+#nav {
+	width: 100%;
+	height: 75px;
+	/* background-color: $lighter-gray; */
+	@include flexbox();
+	@include v-align();
+	@include bp-small { }
+
+	ul {
+		padding: 0; 
+		text-align: center;
+		a {
+			text-decoration: none;
+			.active-nav {
+				color: $link-active-color;
+			}
+		
+			li {
+				@include center-list;
+				@include fonts($font: $nav-font, $size: 0.8em, $color: $nav-font-color);
+				@include linx($nav-font-color, $link-hover-color, $link-active-color);
+				padding: 0 5px;
+				margin: 0 2.5%;
+			}	
+		}
+	}
+}
+

@@ -36,11 +36,11 @@ gulp.task('images', function() {
 
 gulp.task('watch', function() {
    // Watch .js files
-  gulp.watch('src/js/*.js', ['scripts']);
+  gulp.watch('process/js/*.js', ['scripts']);
    // Watch .scss files
-  gulp.watch('src/scss/*.scss', ['sass']);
+  gulp.watch('process/sass/modules/*.scss', ['sass']);
    // Watch image files
-  gulp.watch('src/images/**/*', ['images']);
+  gulp.watch('process/images/**/*', ['images']);
  });
 
 gulp.task('default', ['scripts', 'sass', 'images', 'watch']);

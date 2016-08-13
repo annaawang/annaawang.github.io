@@ -1,16 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Lora);
+@import 'modules/variables';
+@import 'modules/mixins';
+@import 'modules/normalize';
+@import 'modules/structure';
 
-$body-font: 'Lora', serif;
 
 
-#nav {
-	background-color: blue;
-
-	li {
-		font-family: $body-font;
-		font-size: 5em;
-	}
-}
 
 
 
