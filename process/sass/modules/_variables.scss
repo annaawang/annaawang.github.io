@@ -3,15 +3,33 @@
 // COLORS
 $blue: #66CCCC;
 $dark-blue: #669999;
-$lighter-gray: #FAFAFA;
+$lighter-gray: #E8E8E8;
 $light-gray: #666;
 $dark-gray: #333;
 
+// FONTS 
 $lora: 'Lora', serif;
+$helvetica-neue: 'Helvetica Neue', sans-serif;
 
+// 
+
+$name-font: $helvetica-neue;
+$name-font-color: $lighter-gray;
+
+$tab-font: $helvetica-neue;
+$tab-font-color: $lighter-gray;
+$tab-active-color: $light-gray;
+$tab-hover-color: $dark-gray;
 
 $nav-font: $lora;
 $nav-font-color: $light-gray;
+$nav-hover-color: $blue;
+$nav-active-color: $dark-blue;
 
-$link-hover-color: $blue;
-$link-active-color: $dark-blue;
+$label-font: $helvetica-neue; 
+$label-font-color: $dark-gray;
+
+// FOOTER
+$icon-color: $light-gray;
+$icon-hover-color: $dark-gray;
+$icon-active-color: $dark-gray;

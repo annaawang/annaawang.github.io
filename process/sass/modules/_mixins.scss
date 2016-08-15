@@ -27,6 +27,19 @@
 	display: inline-block;
 }
 
+@mixin box-sizing() {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+//structure
+@mixin wrapper($width) {
+  max-width: $width;
+  margin: auto;
+}
+
 // flexbox
 @mixin flexbox() {
   display: -webkit-box;
