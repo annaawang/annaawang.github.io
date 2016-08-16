@@ -10,6 +10,7 @@ $dark-gray: #333;
 // FONTS 
 $lora: 'Lora', serif;
 $helvetica-neue: 'Helvetica Neue', sans-serif;
+$courier: 'courier new', sans-serif;
 
 // 
 
@@ -21,7 +22,7 @@ $tab-font-color: $lighter-gray;
 $tab-active-color: $light-gray;
 $tab-hover-color: $dark-gray;
 
-$nav-font: $lora;
+$nav-font: $courier;
 $nav-font-color: $light-gray;
 $nav-hover-color: $blue;
 $nav-active-color: $dark-blue;

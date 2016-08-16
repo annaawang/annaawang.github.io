@@ -83,3 +83,12 @@
     @content;
   }
 }
+
+// CLEARFIX
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

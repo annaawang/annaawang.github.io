@@ -29,7 +29,7 @@ gulp.task('sass', function() {
 
 
 gulp.task('images', function() {
-  return gulp.src('process/images/**/*')
+  return gulp.src('process/images/*.jpg')
     .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
     .pipe(gulp.dest('builds/img'));
 });
