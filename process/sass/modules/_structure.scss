@@ -41,6 +41,7 @@ body {
 	@include wrapper(600px);
 	@include flexbox();
 	@include centerflex();
+	padding: 0 20px;
 
 	.title {
 		text-align: center;
@@ -77,10 +78,6 @@ body {
 			letter-spacing: 1.5px;
 		}
 	}
-	.about {
-		width: 400px;
-		margin: 0 auto;
-	}
 
 	.text {
 		p {
@@ -115,6 +112,10 @@ body {
 	}
 }
 
+.about-container {
+	@extend .container;
+	@include wrapper(400px);
+}
 
 .work-container {
 	@include wrapper(600px);
