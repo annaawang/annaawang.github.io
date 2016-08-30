@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Karla);
 
 // COLORS
 $blue: #66CCCC;
@@ -11,26 +12,41 @@ $dark-gray: #333;
 $lora: 'Lora', serif;
 $helvetica-neue: 'Helvetica Neue', sans-serif;
 $courier: 'courier new', sans-serif;
+$karla: 'Karla', sans-serif;
 
-// 
+// NAV
 
-$name-font: $helvetica-neue;
-$name-font-color: $lighter-gray;
+$name-font: $lora;
+$name-font-color: $blue;
+
+$nav-font: $helvetica-neue;
+$nav-font-color: $light-gray;
+$nav-hover-color: $blue;
+$nav-active-color: $dark-blue;
 
 $tab-font: $helvetica-neue;
 $tab-font-color: $lighter-gray;
 $tab-active-color: $light-gray;
 $tab-hover-color: $dark-gray;
 
-$nav-font: $courier;
-$nav-font-color: $light-gray;
-$nav-hover-color: $blue;
-$nav-active-color: $dark-blue;
-
 $label-font: $helvetica-neue; 
 $label-font-color: $dark-gray;
 
+$title-font: $karla;
+$title-font-color: $dark-gray;
+
+
+$header-font: $helvetica-neue;
+$header-font-color: $dark-blue;
+
+$body-font: $lora;
+$body-font-color: $light-gray;
+
 // FOOTER
+$footer-font: $helvetica-neue;
+$footer-font-color: $dark-gray;
+$footer-active-color: $dark-gray;
+$footer-hover-color: $dark-gray;
 $icon-color: $light-gray;
 $icon-hover-color: $dark-gray;
 $icon-active-color: $dark-gray;
