@@ -56,6 +56,9 @@ body {
 	.item {
 		@include flex(0);
 		margin: auto;
+		&:last-child {
+			margin-bottom: 100px;
+		}
 		a {
 			img {
 			width: 300px;
@@ -72,8 +75,26 @@ body {
 			text-transform: uppercase;
 			text-align: center;
 			@include fonts($label-font, 0.6em, $label-font-color);
-			letter-spacing: 2px;
+			letter-spacing: 1.5px;
 		}
+	}
+	.about {
+		width: 400px;
+		margin: 0 auto;
+	}
+
+	.text {
+		p {
+			@include fonts($body-font, 0.85em, $body-font-color, $height: 1.4em);
+			letter-spacing: 0.1px;
+			&:last-child {
+				margin-bottom: 200px;
+			}
+			.link {
+				@include linx($nav-font-color, $nav-hover-color, $nav-active-color);
+			}
+		}
+		
 	}
 
 	.images {
@@ -154,7 +175,7 @@ body {
 
 .tab {
 	width: 100%;
-	padding-top: 50px;
+	margin-top: 80px;
 	margin-bottom: 20px;
 	@include box-sizing();
 	ul {
