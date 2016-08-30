@@ -93,6 +93,11 @@ body {
 			.link {
 				@include linx($nav-font-color, $nav-hover-color, $nav-active-color);
 			}
+
+			a {
+				@include linx(#999, $dark-blue, $nav-active-color);
+				text-decoration: none;
+			}
 		}
 		
 	}
