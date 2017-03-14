@@ -156,6 +156,9 @@ body {
 					font-weight: bold;
 
 				}
+				a {
+					@include linx(#999, $dark-blue, $nav-active-color);
+				}
 			}
 			.img {
 				text-align: center;
