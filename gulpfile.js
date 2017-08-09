@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 gulp.task('scripts', function() {
     return gulp.src('process/js/*.js')
       .pipe(concat('main.js'))
-      .pipe(gulp.dest('builds/js'));
+      .pipe(gulp.dest('pages/js'));
 });
 
 gulp.task('scripts', function() {
@@ -17,21 +17,21 @@ gulp.task('scripts', function() {
       .pipe(concat('main.js'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('builds/js'));
+        .pipe(gulp.dest('pages/js'));
 });
 
 
 gulp.task('sass', function() {
     return sass('process/sass/styles.scss', {style: 'compressed'})
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('builds/css'));
+        .pipe(gulp.dest('pages/css'));
 });
 
 
 gulp.task('images', function() {
   return gulp.src('process/images/*.jpg')
     .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
-    .pipe(gulp.dest('builds/img'));
+    .pipe(gulp.dest('pages/img'));
 });
 
 gulp.task('watch', function() {

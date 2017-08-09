@@ -57,7 +57,7 @@ body {
 		@include flex(0);
 		margin: auto;
 		&:last-child {
-			margin-bottom: 100px;
+			margin-bottom: 20%;
 		}
 		a {
 			img {
@@ -81,7 +81,7 @@ body {
 
 	.text {
 		p {
-			@include fonts($body-font, 0.85em, $body-font-color, $height: 1.4em);
+			@include fonts($body-font, 1em, $body-font-color, $height: 1.8em);
 			letter-spacing: 0.1px;
 			&:last-child {
 				margin-bottom: 200px;
@@ -92,7 +92,6 @@ body {
 
 			a {
 				@include linx(#999, $dark-blue, $nav-active-color);
-				text-decoration: none;
 			}
 		}
 		
@@ -131,17 +130,18 @@ body {
 	}
 
 	.section {
-		margin: 5% 0;
+		margin: 10% 0;
 		&:last-child  {
-			margin-bottom: 80px;
+			margin-bottom: 15%;
 		}
 
 		.header {
 			h1 {
 				margin: 0 0 6px 0;
-				@include fonts($header-font, 0.8em, $header-font-color);
+				@include fonts($header-font, 0.9em, $header-font-color);
 				text-transform: uppercase;
 				letter-spacing: 1.3px;
+				font-weight: 500;
 			}
 		}
 
@@ -149,7 +149,7 @@ body {
 
 			p {
 				margin: 0 0 4px 0;
-				@include fonts($body-font, 0.85em, $body-font-color, $height: 1.4em);
+				@include fonts($body-font, 1em, $body-font-color, $height: 1.8em);
 				letter-spacing: 0.1px;
 
 				.emph {
@@ -169,7 +169,7 @@ body {
 			}
 
 			ul { li {
-				@include fonts($body-font, 0.85em, $body-font-color, $height: 1.4em);
+				@include fonts($body-font, 0.9em, $body-font-color, $height: 1.8em);
 				letter-spacing: 0.1px;
 			} }
 
@@ -217,6 +217,7 @@ footer {
 	height: 50px;
 	position: fixed;
 	bottom: 0;
+	left:0;
 	@include bp-small() {
 		position: static;
 	}
