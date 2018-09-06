@@ -1,8 +1,0 @@
-# Ignore folder with node modules
-node_modules/
-
-# Ignore sass cache
-.sass-cache/
-
-
-
