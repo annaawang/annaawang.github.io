@@ -1,0 +1,12 @@
+# Ignore folder node modules
+node_modules/
+
+# Ignore hidden files
+.DS_Store
+.sass_cache
+
+# Ignore processing files
+process/
+gulpfile.js
+package-lock.json
+package.json
