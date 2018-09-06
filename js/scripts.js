@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $(".animsition").animsition({
-    inClass: 'fade-in-up-sm',
-    outClass: 'fade-out-up-sm',
-    inDuration: 1000,
-    outDuration: 600,
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 600,
+    outDuration: 300,
     linkElement: '.animsition-link',
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
