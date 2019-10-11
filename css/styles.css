@@ -25,7 +25,27 @@ html {
  * Remove default margin.
  */
 body {
-  margin: 0; }
+  margin: 0; 
+  text-align: center; /* for interim */
+  max-height: 100vh; /* for interim */
+  background-color: #45AFE2; /* for interim */
+  padding: 0 !important; /* for interim */
+}
+
+#interim {
+    padding-top: 20%; /* for interim */
+}
+
+#interim h1 { /* for interim */
+  margin: 0;
+  position: relative;
+  left: 0;
+  top: 90px;
+  color: white;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+  font-size: 18px;
+}
 
 /* HTML5 display definitions
    ========================================================================== */
