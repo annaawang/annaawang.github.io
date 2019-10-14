@@ -26,12 +26,14 @@ html {
  */
 body {
   margin: 0; 
+}
+
+.interim-body {
   text-align: center; /* for interim */
   max-height: 100vh; /* for interim */
   background-color: #45AFE2; /* for interim */
   padding: 0 !important; /* for interim */
 }
-
 #interim {
     padding-top: 20%; /* for interim */
 }
