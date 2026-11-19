@@ -126,6 +126,21 @@ h1{
   .content{padding:72px 24px 104px;gap:28px}
   .seal{right:24px;bottom:24px}
 }
+/* Gentle entrance */
+@media (prefers-reduced-motion: no-preference) {
+  .content > * {
+    opacity: 0;
+    transform: translateY(6px);
+    animation: rise 700ms cubic-bezier(.2,.7,.2,1) forwards;
+  }
+  .content > *:nth-child(1) { animation-delay: 60ms; }   /* photo */
+  .content > *:nth-child(2) { animation-delay: 160ms; }  /* name */
+  .content > *:nth-child(3) { animation-delay: 260ms; }  /* bio */
+  .content > *:nth-child(4) { animation-delay: 360ms; }  /* icons */
+  .seal { opacity: 0; animation: fadeIn 900ms ease 650ms forwards; }
+}
+@keyframes rise   { to { opacity: 1; transform: none; } }
+@keyframes fadeIn { to { opacity: 1; } }
 </style>
 </head>
 <body>
