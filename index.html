@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anna Wang Kizer</title>
+<meta name="description" content="Product designer at Okta, based in Seattle. I write about language, identity &amp; belonging.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FAFAF9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1F1F1E" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://www.annakizer.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.annakizer.com/">
+<meta property="og:title" content="Anna Wang Kizer">
+<meta property="og:description" content="Product designer at Okta, based in Seattle. I write about language, identity &amp; belonging.">
+<meta property="og:image" content="https://www.annakizer.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+<link rel="preload" href="/assets/fonts/BauhausModDisplay-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/BitecSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face{font-family:'Bauhaus Mod Display';src:url(/assets/fonts/BauhausModDisplay-Light.woff2) format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Bitec Sans';src:url(/assets/fonts/BitecSans-Light.woff2) format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Seal';src:url(/assets/fonts/seal-subset.woff2) format('woff2');font-display:block}
+
+:root{
+  --bg:#FAFAF9;
+  --text:#2E2E2E;
+  --name:#1C1C1C;
+  --link:#22335C;
+  --link-line:#B8BFD0;
+  --link-hover:#22335C;
+  --icon:#3A3A3A;
+  --icon-hover-bg:#EFEFEC;
+  --muted:#5E5E5A;
+  --seal:#A8261C;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#1F1F1E;
+    --text:#D6D6D2;
+    --name:#F2F2EE;
+    --link:#B9C7EA;
+    --link-line:#4D5878;
+    --link-hover:#D4DDF5;
+    --icon:#C8C8C4;
+    --icon-hover-bg:#2E2E2C;
+    --muted:#A3A39E;
+    --seal:#C2392B;
+  }
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg)}
+body{
+  min-height:100vh;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;overflow-x:hidden;
+  color:var(--text);
+  font-family:'Bitec Sans',system-ui,sans-serif;font-weight:300;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--link);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:var(--link-line)}
+a:hover{color:var(--link-hover);text-decoration-color:var(--link-hover)}
+
+.content{
+  width:100%;max-width:390px;margin:0 auto;padding:84px 24px;
+  display:flex;flex-direction:column;align-items:center;gap:32px;text-align:center;
+}
+.photo{width:160px;height:160px;object-fit:cover;object-position:50% 58%;display:block;border-radius:2px}
+h1{
+  margin:0 0 -18px;
+  font-family:'Bauhaus Mod Display',Georgia,serif;font-size:28px;font-weight:300;
+  letter-spacing:-0.01em;line-height:1.1;color:var(--name);
+}
+.bio{margin:0;font-size:14px;line-height:1.65}
+
+/* Jimothy */
+.seattle{position:relative;cursor:default;outline:none}
+.jim{position:absolute;left:50%;bottom:55%;opacity:0;pointer-events:none;line-height:1;transform:translate(-50%,6px)}
+.jim img{display:block;width:30px;height:auto}
+.jim-walk{display:inline-block;transform-origin:50% 100%}
+.seattle:hover .jim,.seattle:focus .jim{animation:jimRun 1.7s cubic-bezier(.45,0,.7,1) infinite}
+.seattle:hover .jim-walk,.seattle:focus .jim-walk{animation:jimScurry 170ms ease-in-out 320ms infinite alternate}
+@keyframes jimRun{
+  0%{opacity:0;transform:translate(-50%,6px) scale(.7)}
+  12%{opacity:1;transform:translate(-50%,-4px) scale(1)}
+  20%{transform:translate(-50%,-4px) scale(1)}
+  85%{opacity:1}
+  100%{opacity:0;transform:translate(calc(-50% + 280px),-4px) scale(1)}
+}
+@keyframes jimScurry{from{transform:rotate(-6deg) translateY(0)}to{transform:rotate(5deg) translateY(-3px)}}
+@media (prefers-reduced-motion:reduce){
+  .seattle:hover .jim,.seattle:focus .jim{animation:none;opacity:1;transform:translate(-50%,-4px)}
+  .seattle:hover .jim-walk,.seattle:focus .jim-walk{animation:none}
+}
+
+/* Links */
+.links{position:relative;display:flex;justify-content:center;gap:8px}
+.icon-btn{
+  width:44px;height:44px;display:flex;align-items:center;justify-content:center;
+  border:0;border-radius:50%;background:transparent;color:var(--icon);
+  cursor:pointer;padding:0;text-decoration:none;
+  transition:background 160ms ease,color 160ms ease;
+}
+.icon-btn:hover{background:var(--icon-hover-bg);color:var(--link-hover)}
+.icon-btn:focus-visible{outline:1.5px solid var(--link);outline-offset:2px}
+.copied{
+  position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:4px;
+  font-size:12px;color:var(--muted);white-space:nowrap;opacity:0;transition:opacity 200ms ease;
+}
+.copied.show{opacity:1}
+
+/* Seal */
+.seal{position:absolute;right:36px;bottom:36px;width:28px;height:28px}
+.seal text{font-family:'Seal',serif;fill:var(--bg)}
+
+@media (max-width:600px){
+  .content{padding:72px 24px 104px;gap:28px}
+  .seal{right:24px;bottom:24px}
+}
+</style>
+</head>
+<body>
+<main class="content">
+  <img class="photo" src="/assets/anna.jpg" width="160" height="160" alt="Anna smiling on a Seattle ferry in a Mariners cap, with Puget Sound behind her">
+  <h1>Anna Wang Kizer</h1>
+  <p class="bio">Hi! I design products at&nbsp;<a href="https://www.okta.com">Okta</a>&nbsp;and live in <span class="seattle" tabindex="0">Seattle<span class="jim" aria-hidden="true"><span class="jim-walk"><img src="/assets/jimothy.png" alt="" width="30" height="27"></span></span></span> with my husband &amp; two kids. I <a href="https://raisinglanguage.substack.com">write</a> about language, identity &amp; belonging. And once upon a time dabbled in <a href="https://shoutoutcolorado.com/meet-anna-kizer-wedding-florist-freelance-designer/">wedding florals</a>.</p>
+  <nav class="links" aria-label="Elsewhere">
+    <button type="button" class="icon-btn" id="copy-email" aria-label="Copy email address anna.a.kizer@gmail.com" title="Copy email">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="1.5"/><path d="M3.5 6.5 L12 13 L20.5 6.5"/></svg>
+    </button>
+    <a class="icon-btn" href="https://www.linkedin.com/in/annawangkizer" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M8 10.5 V16.5"/><path d="M8 7.6 V7.7"/><path d="M11.5 16.5 V10.5 M11.5 13 C11.5 11.4 12.6 10.4 14 10.4 C15.4 10.4 16.3 11.3 16.3 13 V16.5"/></svg>
+    </a>
+    <span class="copied" id="copied" aria-live="polite"></span>
+  </nav>
+</main>
+
+<svg class="seal" role="img" aria-label="Seal reading 王安娜" viewBox="0 0 100 100">
+  <defs>
+    <filter id="sealInk" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -7 0 0 0 4.6" result="m"/>
+      <feComposite in="SourceGraphic" in2="m" operator="in" result="t"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="9" result="w"/>
+      <feDisplacementMap in="t" in2="w" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#sealInk)">
+    <rect x="2" y="2" width="96" height="96" rx="7" style="fill:var(--seal)"/>
+    <text x="0" y="0" transform="translate(74 50) scale(1 1.85)" text-anchor="middle" dominant-baseline="central" font-size="47">王</text>
+    <text x="0" y="0" transform="translate(28 31)" text-anchor="middle" dominant-baseline="central" font-size="40">安</text>
+    <text x="0" y="0" transform="translate(28 71)" text-anchor="middle" dominant-baseline="central" font-size="40">娜</text>
+  </g>
+</svg>
+
+<script>
+(function () {
+  var email = 'anna.a.kizer@gmail.com';
+  var btn = document.getElementById('copy-email');
+  var note = document.getElementById('copied');
+  var timer;
+  function done() {
+    note.textContent = 'Email copied';
+    note.classList.add('show');
+    clearTimeout(timer);
+    timer = setTimeout(function () { note.classList.remove('show'); }, 1600);
+  }
+  function fallback() {
+    var t = document.createElement('textarea');
+    t.value = email;
+    t.setAttribute('readonly', '');
+    t.style.position = 'fixed';
+    t.style.opacity = '0';
+    document.body.appendChild(t);
+    t.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(t);
+    done();
+  }
+  btn.addEventListener('click', function () {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(email).then(done, fallback);
+    } else {
+      fallback();
+    }
+  });
+})();
+</script>
+</body>
+</html>
